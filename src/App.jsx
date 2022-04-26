@@ -2,7 +2,8 @@
 import { useContext } from "react";
 import { themeContext } from "./Context";
 import './index.css'
-import { Fatch } from "./page/Fatch";
+
+import Home from "./page/Home";
 import Navbar from "./page/Navbar";
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
   const darkMode = theme.state.darkMode;
 
   return (
-      <div
+    <div
       className="App"
       style={{
         background: darkMode ? "black" : "",
@@ -18,8 +19,8 @@ function App() {
       }}
     >
       <Navbar />
-      <Fatch/>
-      
+      <Home />
+   
     </div>
   );
 }
