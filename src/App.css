@@ -1,8 +1,7 @@
 .home {
-    display: flex;
     background: url(./styl/0.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 17rem;
+    padding-top: 13rem;
     padding-bottom: 17rem;
 }

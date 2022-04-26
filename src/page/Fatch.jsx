@@ -40,10 +40,13 @@ export const Fatch = () => {
         <input
           value={data}
           onChange={e => setdata(e.target.value)}
-          className=" py-2 px-5 border-2 border-red-900 "
+          className=" py-2 px-5 border-2 border-red-900 text-2xl text-black "
           placeholder="Search"
         />
-        <button type="submit" className=" py-2 px-5 border-2 border-red-900">
+        <button
+          type="submit"
+          className=" py-2 px-5 border-2 uppercase font-bold text-2xl  bg-orange-400"
+        >
           {" "}
           Search
         </button>
@@ -53,11 +56,18 @@ export const Fatch = () => {
         {getdata &&
           getdata.map(item => {
             return (
-              <div key={item.id} className="flex justify-center ">
-                <div className="w-1/2 grid grid-cols-2">
-                  <h1>{item.name}</h1>
-                  <h1>{item.country}</h1>
-                  <h1>{item.lat}</h1>
+              <div key={item.id} className="flex justify-center  ">
+                <div className="w-1/2  flex  space-x-5  bg-black   text-center items-center text-3xl  space-y-6 ">
+                  <h1 className=" ">
+                    <span className=" bg-black"> city name:</span>
+                    {item.name}
+                  </h1>
+
+                  <h1 className=" ">
+                    {" "}
+                    low temperature: {item.lat}
+                  </h1>
+                  <h1 > high temperature: {item.lon}</h1>
                   <h2></h2>
                 </div>
               </div>
