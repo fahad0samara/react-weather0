@@ -57,7 +57,7 @@ export const Fatch = () => {
           getdata.map(item => {
             return (
               <div key={item.id} className="flex justify-center  ">
-                <div className="w-1/2  flex  space-x-5  bg-black   text-center items-center text-3xl  space-y-6 ">
+                <div className="w-1/2  flex  space-x-5  bg-black text-white   text-center items-center text-3xl  space-y-6 ">
                   <h1 className=" ">
                     <span className=" bg-black"> city name:</span>
                     {item.name}
